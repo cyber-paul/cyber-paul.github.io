@@ -19,6 +19,16 @@ h2,.white{
     color: #fff;
 }
 
+h5 {
+  color: #0091ff;
+  font-size: 1.0rem;
+}
+h5 span {
+    font-size: 1.0rem;
+    padding-bottom: 10px;
+    margin:0;
+    color: #305a7b;
+}
 a{
     color: #5cb7ab;
     text-decoration: none;
