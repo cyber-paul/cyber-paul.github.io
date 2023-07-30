@@ -40,7 +40,8 @@ a{
     transition: 0.3s;
     width:fit-content;
     border-radius: 5px; /* 5px rounded corners */
-  }
+    margin: auto;
+}
   
   /* On mouse-over, add a deeper shadow */
   .card:hover {
