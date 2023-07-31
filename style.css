@@ -51,8 +51,8 @@ a{
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgb(247, 247, 247);
     transition: 0.3s;
-    width:100%;
-    margin-left: 3vh;
+    width:30%;
+    margin-left: 35%;
     border-radius: 5px; /* 5px rounded corners */
   }
   
