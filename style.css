@@ -29,6 +29,9 @@ h5 span {
     margin:0;
     color: #305a7b;
 }
+img {
+  border-radius: 75%;
+}
 a{
     color: #5cb7ab;
     text-decoration: none;
