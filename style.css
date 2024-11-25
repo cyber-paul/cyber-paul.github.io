@@ -146,6 +146,32 @@ a{
     padding-left: 10px;
 }
 
+#tools-newsfeed {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#tools-newsfeed h3 {
+  font-size: 1.5em;
+}
+
+#tools-newsfeed .news-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#tools-newsfeed .news-item:last-child {
+  border-bottom: none;
+}
+
+#tools-newsfeed a {
+  transition: color 0.3s ease;
+}
+
+#tools-newsfeed a:hover {
+  color: #0056b3;
+}
+
 /* media queres */
 @media(max-width:780px){
     .grid-2{
