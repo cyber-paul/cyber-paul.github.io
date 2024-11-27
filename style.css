@@ -148,23 +148,27 @@ a{
 
 #tools-newsfeed {
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 0 15px rgba(255, 255, 0, 0.6); /* Glowing effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 255, 0, 0.6); /* Subtle glow */
   background-color: #000; /* Dark background */
-  padding: 10px; /* Reduced padding for compactness */
-  margin-top: 20px;
+  padding: 10px 20px; /* Increase horizontal padding, reduce vertical padding */
+  margin-top: 15px;
   color: #fff; /* Text color adjustment */
+  width: 100%; /* Allow full-width scaling */
+  max-width: 800px; /* Constrain maximum width for readability */
+  font-size: 1rem; /* Adjust font size for wider text */
+  line-height: 1.4; /* Improve readability with line spacing */
 }
 
 #tools-newsfeed h3 {
-  font-size: 1.5em;
+  font-size: 1.4em; /* Adjust title font size */
   text-align: center;
   color: #ff0; /* Yellow title */
-  margin-bottom: 5px; /* Reduced margin below the title */
+  margin-bottom: 10px; /* Slightly more space below the title */
 }
 
 #tools-newsfeed .news-item {
-  padding: 5px 10px; /* Reduced padding around each news item */
-  border-bottom: 1px solid #444;
+  padding: 5px 0; /* Reduce vertical padding between news items */
+  border-bottom: 1px solid #444; /* Border for visual separation */
 }
 
 #tools-newsfeed .news-item:last-child {
@@ -173,14 +177,99 @@ a{
 
 #tools-newsfeed a {
   transition: color 0.3s ease, text-shadow 0.3s ease;
-  color: #5cb7ab;
+  color: #5cb7ab; /* Matches theme */
   text-decoration: none;
 }
 
 #tools-newsfeed a:hover {
   color: #ff5722; /* Orange on hover */
-  text-shadow: 0 0 8px rgba(255, 87, 34, 0.8); /* Glow effect */
+  text-shadow: 0 0 5px rgba(255, 87, 34, 0.8); /* Subtle glow effect */
   cursor: pointer;
+}
+
+/* For responsiveness */
+@media (max-width: 780px) {
+  #tools-newsfeed {
+    width: 95%; /* Scale to almost full width on smaller screens */
+    padding: 10px;
+  }
+  #tools-newsfeed h3 {
+    font-size: 1.2em;
+  }
+  #tools-newsfeed .news-item {
+    padding: 3px 0; /* Reduce padding even further for compact layout */
+  }
+}
+/* Analysis Section */
+#analysis-section {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#analysis-section h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.analysis-tree {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.analysis-tree li {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}
+
+.analysis-tree li:last-child {
+  border-bottom: none;
+}
+
+.analysis-tree span {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.analysis-tree a {
+  font-size: 1.1rem;
+  color: #5cb7ab;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.analysis-tree a:hover {
+  color: #ff5722;
+  text-decoration: underline;
+}
+
+.analysis-tree p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  #analysis-section {
+    padding: 15px;
+  }
+
+  .analysis-tree a {
+    font-size: 1rem;
+  }
+
+  .analysis-tree p {
+    font-size: 0.85rem;
+  }
 }
 
 /* media queres */
