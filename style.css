@@ -204,17 +204,17 @@ a{
 #analysis-section {
   background-color: #1e1e1e;
   color: #fff;
-  padding: 20px;
-  margin: 20px auto;
+  padding: 15px;
+  margin: 15px auto;
   border-radius: 8px;
   max-width: 800px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 #analysis-section h3 {
-  text-align: center;
+  text-align: left;
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #ffcc00;
 }
 
