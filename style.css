@@ -398,4 +398,67 @@ body, html {
         padding-left: 5vw;
         padding-right: 5vw;
     }
+    /* Consulting Services Section */
+#consulting-services {
+    background-color: #1a1a1a; /* Dark mode theme */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+#consulting-services h2 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.service-category {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.service-category h3 {
+    font-size: 1.4rem;
+    color: #5cb7ab;
+}
+
+.service-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-category li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+    color: #ddd;
+}
+
+/* Call-to-Action Buttons */
+.cta {
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ffa500;
+    color: #fff;
+}
+
 }
