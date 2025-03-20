@@ -102,25 +102,26 @@ a{
 
 /* Site Under Construction Banner */
 #construction-banner {
-    background-color: #ffcc00; /* Bright yellow */
+    background-color: #ffcc00; /* Bright yellow for visibility */
     color: #000; /* Black text for contrast */
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 10px;
+    padding: 15px 10px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999; /* Ensures it stays above other content */
+    z-index: 10000; /* Ensures it stays above all elements */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #000; /* Adds a separator for visibility */
+    font-family: Arial, sans-serif;
 }
 
-/* Adds spacing so content doesn't overlap */
+/* Adds spacing so content doesn't overlap with the fixed banner */
 body {
-    padding-top: 50px; /* Adjust height to match banner */
+    padding-top: 60px; /* Adjust based on banner height */
 }
-
 
 .card {
     /* Add shadows to create the "card" effect */
