@@ -1,203 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberPaul.space | TransitSpace Systems LLC</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f0f1a;
-            color: #f4f4f4;
-        }
-        #construction-banner {
-            background-color: #222;
-            color: #ffcc00;
-            text-align: center;
-            padding: 0.5rem;
-            font-weight: bold;
-        }
-        .grid-2 {
-            display: flex;
-            flex-wrap: wrap;
-            flex: 1;
-        }
-        .section-1, .section-2 {
-            padding: 2rem;
-        }
-        .section-1 {
-            flex: 1;
-            max-width: 30%;
-            background-color: #1a1a2e;
-            text-align: center;
-        }
-        .section-1 img {
-            width: 80%;
-            border-radius: 10px;
-        }
-        .section-1 h2 {
-            margin-top: 1rem;
-        }
-        .section-1 .fab {
-            font-size: 1.5rem;
-            margin: 0.5rem;
-            color: #00ffff;
-        }
-        .section-1 .card2 a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #00ffff;
-        }
-        .section-2 {
-            flex: 2;
-            max-width: 70%;
-        }
-        .service-category {
-            margin: 2rem 0;
-            background-color: #1e1e2e;
-            padding: 1.2rem;
-            border-radius: 10px;
-            box-shadow: 0 0 8px rgba(0,255,255,0.1);
-        }
-        .service-category h3 {
-            color: #00ffff;
-        }
-        .cta-button {
-            background-color: #00ffff;
-            color: #0f0f1a;
-            padding: 0.6rem 1.2rem;
-            margin: 0.5rem;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .cta-button:hover {
-            background-color: #00cccc;
-        }
-        .mission-block {
-            background-color: #142136;
-            padding: 1.5rem;
-            border-left: 4px solid #00ffff;
-            margin-top: 2rem;
-            border-radius: 10px;
-        }
-        .mission-block h2 {
-            margin-top: 0;
-            color: #00ffff;
-        }
-        footer {
-            background-color: #111;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPaul.space | TransitSpace Systems LLC</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f1a;
+      color: #f4f4f4;
+    }
+    #construction-banner {
+      background-color: #222;
+      color: #ffcc00;
+      text-align: center;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+    .grid-2 {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    .section-1, .section-2 {
+      padding: 2rem;
+    }
+    .section-1 {
+      flex: 1;
+      max-width: 30%;
+      background-color: #1a1a2e;
+      text-align: center;
+    }
+    .section-1 img {
+      width: 80%;
+      border-radius: 10px;
+    }
+    .section-1 h2 {
+      margin-top: 1rem;
+    }
+    .section-1 .fab {
+      font-size: 1.5rem;
+      margin: 0.5rem;
+      color: #00ffff;
+    }
+    .section-1 .card2 a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #00ffff;
+    }
+    .section-2 {
+      flex: 2;
+      max-width: 70%;
+    }
+    .service-category {
+      margin: 2rem 0;
+      background-color: #1e1e2e;
+      padding: 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,255,255,0.1);
+    }
+    .service-category h3 {
+      color: #00ffff;
+    }
+    .cta-button {
+      background-color: #00ffff;
+      color: #0f0f1a;
+      padding: 0.6rem 1.2rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background-color: #00cccc;
+    }
+    .mission-block {
+      background-color: #142136;
+      padding: 1.5rem;
+      border-left: 4px solid #00ffff;
+      margin-top: 2rem;
+      border-radius: 10px;
+    }
+    .mission-block h2 {
+      margin-top: 0;
+      color: #00ffff;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    @media (max-width: 768px) {
+      .grid-2 {
+        flex-direction: column;
+      }
+      .section-1, .section-2 {
+        max-width: 100%;
+        padding: 1.5rem;
+      }
+      .section-1 img {
+        width: 50%;
+      }
+    }
+  </style>
 </head>
 <body>
-<div id="construction-banner">
+  <div id="construction-banner">
     🚧 SITE UNDER CONSTRUCTION 🚧
-</div>
+  </div>
 
-<div class="grid-2">
-    <!-- Left Panel -->
+  <div class="grid-2">
     <div class="section-1">
-        <img src="p_b-c.jpg" alt="Paul Brown Headshot">
-        <h2>Paul Brown</h2>
-        <h5><span class="input"> </span></h5>
-        <a href="https://www.linkedin.com/in/paul-b-58016a61/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/cyber-paul"><i class="fab fa-github"></i></a>
-        <p>paul.brown@6browns.org</p>
-        <div class="card2">
-            <center><a href="resume_pb.pdf">RESUME</a></center>
-        </div>
-        <div class="cta">
-            <a href="mailto:cyberpaul@protonmail.com" class="cta-button">📩 Contact</a>
-            <a href="TransitSpace_Capabilities.pdf" class="cta-button">📄 Capabilities</a>
-        </div>
+      <img src="p_b-c.jpg" alt="Paul Brown Headshot" />
+      <h2>Paul Brown</h2>
+      <h5><span class="input"> </span></h5>
+      <a href="https://www.linkedin.com/in/paul-b-58016a61/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/cyber-paul"><i class="fab fa-github"></i></a>
+      <p>paul.brown@6browns.org</p>
+      <div class="card2">
+        <center><a href="resume_pb.pdf">RESUME</a></center>
+      </div>
+      <div class="cta">
+        <a href="mailto:cyberpaul@protonmail.com" class="cta-button">📩 Contact</a>
+        <a href="TransitSpace_Capabilities.pdf" class="cta-button">📄 Capabilities</a>
+      </div>
     </div>
 
-    <!-- Right Panel -->
     <div class="section-2">
-        <div class="mission-block">
-            <h2>🌉 Bridging Transit Technology & Cyber Defense</h2>
-            <p>
-                TransitSpace Systems LLC spans the full spectrum of Information Systems and Network Security—from high-level architecture to ground-level helpdesk support. 
-                Our mission is to serve as a <strong>bridge agency</strong> that strengthens the connective tissue between:
-            </p>
-            <ul>
-                <li>ITS owners/operators</li>
-                <li>Critical infrastructure stakeholders (e.g., commuter rail)</li>
-                <li>Day-to-day IT operations teams</li>
-            </ul>
-            <p>
-                We work to identify sensitivity zones across partnerships, coordinate shared security goals, and deliver support where it's needed most—whether through strategic threat modeling or direct IT system reinforcement.
-            </p>
-        </div>
+      <div class="mission-block">
+        <h2>🌉 Bridging Transit Technology & Cyber Defense</h2>
+        <p>
+          TransitSpace Systems LLC spans the full spectrum of Information Systems and Network Security—from high-level architecture to ground-level helpdesk support. Our mission is to serve as a <strong>bridge agency</strong> that strengthens the connective tissue between:
+        </p>
+        <ul>
+          <li>ITS owners/operators</li>
+          <li>Critical infrastructure stakeholders (e.g., commuter rail)</li>
+          <li>Day-to-day IT operations teams</li>
+        </ul>
+        <p>
+          We work to identify sensitivity zones across partnerships, coordinate shared security goals, and deliver support where it's needed most—whether through strategic threat modeling or direct IT system reinforcement.
+        </p>
+      </div>
 
-        <h2>Consulting Services</h2>
+      <h2>Consulting Services</h2>
 
-        <div class="service-category">
-            <h3>🚦 ITS Vendor & Systems Integrator Cybersecurity Support</h3>
-            <ul>
-                <li>Cross-agency threat documentation development</li>
-                <li>Shared cybersecurity objective alignment and facilitation</li>
-                <li>Security posture mapping between integrators and agency clients</li>
-                <li>Third-party vendor assurance and zero trust boundary enforcement</li>
-            </ul>
-        </div>
+      <div class="service-category">
+        <h3>🚦 ITS Vendor & Systems Integrator Cybersecurity Support</h3>
+        <ul>
+          <li>Cross-agency threat documentation development</li>
+          <li>Shared cybersecurity objective alignment and facilitation</li>
+          <li>Security posture mapping between integrators and agency clients</li>
+          <li>Third-party vendor assurance and zero trust boundary enforcement</li>
+        </ul>
+      </div>
 
-        <div class="service-category">
-            <h3>🌐 Strategic Defense Coordination</h3>
-            <ul>
-                <li>Secure information sharing strategies across transport networks</li>
-                <li>NIST-aligned defense strategy documentation for transit ecosystem partners</li>
-                <li>Consensus-driven risk assessments for procurement and interoperability</li>
-                <li>Threat modeling tailored to B2G workflows</li>
-            </ul>
-        </div>
+      <div class="service-category">
+        <h3>🌐 Strategic Defense Coordination</h3>
+        <ul>
+          <li>Secure information sharing strategies across transport networks</li>
+          <li>NIST-aligned defense strategy documentation for transit ecosystem partners</li>
+          <li>Consensus-driven risk assessments for procurement and interoperability</li>
+          <li>Threat modeling tailored to B2G workflows</li>
+        </ul>
+      </div>
 
-        <div class="service-category">
-            <h3>🧰 Cross-Domain IT & Systems Support</h3>
-            <ul>
-                <li>Enterprise and field IT systems strategy and documentation</li>
-                <li>Network architecture and secure design consultation</li>
-                <li>IT service delivery models for infrastructure vendors</li>
-                <li>SOPs, onboarding playbooks, and escalation path creation</li>
-            </ul>
-        </div>
+      <div class="service-category">
+        <h3>🧰 Cross-Domain IT & Systems Support</h3>
+        <ul>
+          <li>Enterprise and field IT systems strategy and documentation</li>
+          <li>Network architecture and secure design consultation</li>
+          <li>IT service delivery models for infrastructure vendors</li>
+          <li>SOPs, onboarding playbooks, and escalation path creation</li>
+        </ul>
+      </div>
 
-        <h2>About</h2>
-        <p>CyberPaul.space is the operating brand of TransitSpace Systems LLC — a Virginia-based consultancy focused on cybersecurity, identity systems, and infrastructure resilience. We bring modern strategy and practical implementation to public and vendor-aligned transit organizations.</p>
+      <h2>About</h2>
+      <p>CyberPaul.space is the operating brand of TransitSpace Systems LLC — a Virginia-based consultancy focused on cybersecurity, identity systems, and infrastructure resilience.</p>
 
-        <h2>Experience</h2>
-        <p>Extensive IT and cybersecurity background with practical work in SOC, IAM, endpoint defense, and compliance strategy. Experience spans public infrastructure, private consulting, and mission-driven research.</p>
+      <h2>Experience</h2>
+      <p>Extensive IT and cybersecurity background with practical work in SOC, IAM, endpoint defense, and compliance strategy.</p>
 
-        <h2>Tools & Platforms</h2>
-        <p>Azure (Defender, Entra ID, Sentinel) • Meraki • Qualys • Mimecast • ReliaQuest • Enterprise Linux • Threat Modeling</p>
+      <h2>Tools & Platforms</h2>
+      <p>Azure (Defender, Entra ID, Sentinel) • Meraki • Qualys • Mimecast • ReliaQuest • Enterprise Linux • Threat Modeling</p>
     </div>
-</div>
+  </div>
 
-<footer>
-    &copy; 2025 TransitSpace Systems LLC | DBA CyberPaul.space<br>
+  <footer>
+    &copy; 2025 TransitSpace Systems LLC | DBA CyberPaul.space<br />
     Registered in Virginia | EIN available on request
-</footer>
+  </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-<script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  <script>
     var typed = new Typed(".input", {
-        strings: ["MSc., Cybersecurity", "ex-Culinary Specialist, USCG", "Cycling Enthusiast", "Vinyl Record Collector"],
-        typeSpeed: 40,
-        backSpeed: 50,
-        loop: true,
+      strings: ["MSc., Cybersecurity", "ex-Culinary Specialist, USCG", "Cycling Enthusiast", "Vinyl Record Collector"],
+      typeSpeed: 40,
+      backSpeed: 50,
+      loop: true,
     });
-</script>
+  </script>
 </body>
 </html>
