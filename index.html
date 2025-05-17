@@ -3,123 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Paul Brown 🛸</title>
+    <title>CyberPaul.space | TransitSpace Systems LLC</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f1a;
+            color: #f4f4f4;
+        }
+        #construction-banner {
+            background-color: #222;
+            color: #ffcc00;
+            text-align: center;
+            padding: 0.5rem;
+            font-weight: bold;
+        }
+        .grid-2 {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+        .section-1, .section-2 {
+            padding: 2rem;
+        }
+        .section-1 {
+            flex: 1;
+            max-width: 30%;
+            background-color: #1a1a2e;
+            text-align: center;
+        }
+        .section-1 img {
+            width: 80%;
+            border-radius: 10px;
+        }
+        .section-1 h2 {
+            margin-top: 1rem;
+        }
+        .section-1 .fab {
+            font-size: 1.5rem;
+            margin: 0.5rem;
+            color: #00ffff;
+        }
+        .section-1 .card2 a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #00ffff;
+        }
+        .section-2 {
+            flex: 2;
+            max-width: 70%;
+        }
+        .service-category {
+            margin: 2rem 0;
+            background-color: #1e1e2e;
+            padding: 1.2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,255,255,0.1);
+        }
+        .service-category h3 {
+            color: #00ffff;
+        }
+        .cta-button {
+            background-color: #00ffff;
+            color: #0f0f1a;
+            padding: 0.6rem 1.2rem;
+            margin: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background-color: #00cccc;
+        }
+        .mission-block {
+            background-color: #142136;
+            padding: 1.5rem;
+            border-left: 4px solid #00ffff;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+        .mission-block h2 {
+            margin-top: 0;
+            color: #00ffff;
+        }
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
 <div id="construction-banner">
     🚧 SITE UNDER CONSTRUCTION 🚧
 </div>
 
-    <div class="grid-2">
-        <!-- Left Section - Profile & Links -->
-        <div class="section-1">
-            <img src="p_b-c.jpg" alt="Headshot" style="width:20vw; height:auto;">
-            <h2>Paul Brown</h2>
-            <h5><span class="input"> </span></h5>
-            <a href="https://www.linkedin.com/in/paul-b-58016a61/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/cyber-paul"><i class="fab fa-github"></i></a>
-            <br><br>
-            <p>paul.brown@6browns.org</p>
-            <br>
-            <div class="card2">
-                <center><a href="resume_pb.pdf">RESUME</a></center>
-            </div>
-            <br><br>
+<div class="grid-2">
+    <!-- Left Panel -->
+    <div class="section-1">
+        <img src="p_b-c.jpg" alt="Paul Brown Headshot">
+        <h2>Paul Brown</h2>
+        <h5><span class="input"> </span></h5>
+        <a href="https://www.linkedin.com/in/paul-b-58016a61/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/cyber-paul"><i class="fab fa-github"></i></a>
+        <p>paul.brown@6browns.org</p>
+        <div class="card2">
+            <center><a href="resume_pb.pdf">RESUME</a></center>
+        </div>
+        <div class="cta">
+            <a href="mailto:cyberpaul@protonmail.com" class="cta-button">📩 Contact</a>
+            <a href="TransitSpace_Capabilities.pdf" class="cta-button">📄 Capabilities</a>
+        </div>
+    </div>
 
-            <!-- Nyx-Kronos Black Hole Section -->
-            <div id="nyx-kronos-container">
-                <div id="black-hole">
-                    <div id="nyx-image-wrapper">
-                        <img src="nyx-kronos.png" alt="Nyx-Kronos" id="nyx-image">
-                    </div>
-                </div>
-            </div>
-        </div> <!-- END .section-1 -->
-
-        <!-- Right Section - Consulting Services & Content -->
-        <div class="section-2">
-            <br>
-            <div id="analysis-section">
-                <div id="consulting-services">
-                    <h2>Consulting Services</h2>
-
-                    <div class="service-category">
-                        <h3>🔐 Identity Security Services</h3>
-                        <ul>
-                            <li>Identity & Access Management (IAM) Strategy</li>
-                            <li>Role-Based Access Control (RBAC) Implementation</li>
-                        </ul>
-                    </div>
-
-                    <div class="service-category">
-                        <h3>🛡️ Cybersecurity Solutions</h3>
-                        <ul>
-                            <li>Threat Assessment & Vulnerability Management Strategy</li>
-                            <li>Security Operations Center (SOC) Deployment Guidance</li>
-                            <li>Incident Response Planning</li>
-                        </ul>
-                    </div>
-
-                    <div class="service-category">
-                        <h3>⚖️ Compliance & Risk Management</h3>
-                        <ul>
-                            <li>Risk Assessment & Mitigation</li>
-                            <li>Security Policy Development</li>
-                        </ul>
-                    </div>
-
-                    <div class="cta">
-                        <a href="contact.html" class="cta-button">📩 Contact for Consultation</a>
-                        <a href="services.html" class="cta-button">🔎 Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-            <h2>About</h2>
-            <p>Cybersecurity professional aiming to help in defending systems, networks, and digital identities from malicious intent. My hope is to aid in returning sovereignty to humanities' individual identities within the context of cyberspace.</p>
-                    
-            <h2>Experience</h2>
-            <p>Background includes wide-ranging IT experience with an undergraduate and graduate degree in cybersecurity.</p>
-
-            <h2>Strength</h2>
-            <p>Advocating for, and implementing the most modern security practices available. Addressing incomplete configurations and misconfigurations in enterprise networking infrastructure and systems. Possess general platform and system-agnostic capabilities.</p>
-
-            <h2>Tools <i>Selection used in a professional setting</i></h2>
+    <!-- Right Panel -->
+    <div class="section-2">
+        <div class="mission-block">
+            <h2>🌉 Bridging Transit Technology & Cyber Defense</h2>
             <p>
-                Microsoft Azure Stack (P2 License): Defender (MDE, MDI, MDC), Purview, Sentinel, Entra ID, Intune <br><br>
-                Mimecast Email Security <br><br>
-                Meraki Firewalls, Switches, and Access Points <br><br>
-                ReliaQuest GreyMatter Security Operations Platform <br><br>
-                Qualys VMDR (Vulnerability Management, Detection, and Response)
+                TransitSpace Systems LLC spans the full spectrum of Information Systems and Network Security—from high-level architecture to ground-level helpdesk support. 
+                Our mission is to serve as a <strong>bridge agency</strong> that strengthens the connective tissue between:
             </p>
-        </div> <!-- END .section-2 -->
-    </div> <!-- END .grid-2 -->
+            <ul>
+                <li>ITS owners/operators</li>
+                <li>Critical infrastructure stakeholders (e.g., commuter rail)</li>
+                <li>Day-to-day IT operations teams</li>
+            </ul>
+            <p>
+                We work to identify sensitivity zones across partnerships, coordinate shared security goals, and deliver support where it's needed most—whether through strategic threat modeling or direct IT system reinforcement.
+            </p>
+        </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-    <script>
-        var typed = new Typed(".input", {
-            strings: ["     ", "MSc., Cybersecurity", "ex-Culinary Specialist, USCG", "Cycling Enthusiast", "Vinyl Record Collector", "     "],
-            typeSpeed: 40,
-            backSpeed: 50,
-            loop: true,
-        });
-    </script>
+        <h2>Consulting Services</h2>
 
-    <script>
-        document.getElementById("black-hole").addEventListener("click", function() {
-            window.location.href = "nyx-kronos.html"; // Change to your actual Nyx-Kronos lore page
-        });
-    </script>
+        <div class="service-category">
+            <h3>🚦 ITS Vendor & Systems Integrator Cybersecurity Support</h3>
+            <ul>
+                <li>Cross-agency threat documentation development</li>
+                <li>Shared cybersecurity objective alignment and facilitation</li>
+                <li>Security posture mapping between integrators and agency clients</li>
+                <li>Third-party vendor assurance and zero trust boundary enforcement</li>
+            </ul>
+        </div>
 
-    <script>
-        setInterval(() => {
-            let nyxImage = document.getElementById("nyx-image");
-            nyxImage.style.opacity = (nyxImage.style.opacity == "0.7") ? "0.5" : "0.7";
-        }, 3000);
-    </script>
+        <div class="service-category">
+            <h3>🌐 Strategic Defense Coordination</h3>
+            <ul>
+                <li>Secure information sharing strategies across transport networks</li>
+                <li>NIST-aligned defense strategy documentation for transit ecosystem partners</li>
+                <li>Consensus-driven risk assessments for procurement and interoperability</li>
+                <li>Threat modeling tailored to B2G workflows</li>
+            </ul>
+        </div>
 
+        <div class="service-category">
+            <h3>🧰 Cross-Domain IT & Systems Support</h3>
+            <ul>
+                <li>Enterprise and field IT systems strategy and documentation</li>
+                <li>Network architecture and secure design consultation</li>
+                <li>IT service delivery models for infrastructure vendors</li>
+                <li>SOPs, onboarding playbooks, and escalation path creation</li>
+            </ul>
+        </div>
+
+        <h2>About</h2>
+        <p>CyberPaul.space is the operating brand of TransitSpace Systems LLC — a Virginia-based consultancy focused on cybersecurity, identity systems, and infrastructure resilience. We bring modern strategy and practical implementation to public and vendor-aligned transit organizations.</p>
+
+        <h2>Experience</h2>
+        <p>Extensive IT and cybersecurity background with practical work in SOC, IAM, endpoint defense, and compliance strategy. Experience spans public infrastructure, private consulting, and mission-driven research.</p>
+
+        <h2>Tools & Platforms</h2>
+        <p>Azure (Defender, Entra ID, Sentinel) • Meraki • Qualys • Mimecast • ReliaQuest • Enterprise Linux • Threat Modeling</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 TransitSpace Systems LLC | DBA CyberPaul.space<br>
+    Registered in Virginia | EIN available on request
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+    var typed = new Typed(".input", {
+        strings: ["MSc., Cybersecurity", "ex-Culinary Specialist, USCG", "Cycling Enthusiast", "Vinyl Record Collector"],
+        typeSpeed: 40,
+        backSpeed: 50,
+        loop: true,
+    });
+</script>
 </body>
 </html>
