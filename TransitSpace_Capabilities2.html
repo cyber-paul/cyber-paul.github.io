@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capabilities | CyberPaul.space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at center, #0b0c1a, #000);
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1a1a2e;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffff;
+      margin: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(25, 25, 40, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 0 12px #2a003f88;
+    }
+    h2 {
+      color: #00ffff;
+      font-family: 'Orbitron', sans-serif;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .note {
+      color: #aaaaaa;
+      font-style: italic;
+      margin-top: 1rem;
+    }
+    .collapsible {
+      background-color: #2a003f;
+      color: #e0e0e0;
+      cursor: pointer;
+      padding: 0.8rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+    .content {
+      padding: 0 1rem;
+      display: none;
+      overflow: hidden;
+      background-color: rgba(30, 30, 50, 0.85);
+      border-left: 4px solid #00ffff;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1.5rem;
+      color: #888;
+      background-color: #111;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Capabilities Statement</h1>
+  </header>
+  <div class="container">
+    <h2>Technical Focus Areas</h2>
+    <ul>
+      <li>Identity & Access Management (IAM) Strategy and Design</li>
+      <li>Security Operations Center (SOC) Architecture and Response Tuning</li>
+      <li>Threat Modeling and Vulnerability Management</li>
+      <li>Zero Trust Implementation Across Hybrid Environments</li>
+      <li>Public Infrastructure and Transit Cybersecurity Readiness</li>
+      <li>Endpoint Detection, Email Protection, and Cloud Security Hardening</li>
+    </ul>
+
+    <h2>Cloud & Platform Experience</h2>
+    <ul>
+      <li>Extensive experience with Microsoft Azure cloud ecosystem</li>
+      <li>Hands-on configuration with Entra ID, Microsoft Defender XDR suite, Intune, Sentinel, and Purview</li>
+      <li>Comfortable navigating multi-tenant, hybrid cloud and on-premise deployments</li>
+      <li>Working knowledge of AWS and Google Cloud Platform fundamentals</li>
+    </ul>
+    <p class="note">Note: TransitSpace Systems LLC is platform-agnostic. While our principal consultant has extensive hands-on experience in Microsoft environments, all project architecture discussions begin with a product-agnostic evaluation to determine the most appropriate solution, duration, and platform fit (Azure, AWS, GCP, or otherwise).</p>
+
+    <h2>IT Systems Support</h2>
+    <ul>
+      <li>Network segmentation and firewall best practices (Meraki, Fortinet, etc.)</li>
+      <li>Documentation of escalation paths, SOPs, and user onboarding playbooks</li>
+      <li>Secure deployment models for field and mobile infrastructure teams</li>
+      <li>Augmentation support for internal IT and security teams</li>
+    </ul>
+
+    <button class="collapsible">Click to Expand: Philosophy on Capabilities</button>
+    <div class="content">
+      <p>Our capabilities are designed to be adaptable to the mission, not tied to specific platforms or vendors. At our core, we believe that secure infrastructure starts with understanding people, processes, and purpose—before committing to tools or technologies.</p>
+      <p>CyberPaul.space exists to ensure that every digital structure has a soul of integrity, and every technical plan has a bridge to the human operators who will sustain it.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 TransitSpace Systems LLC | DBA CyberPaul.space
+  </footer>
+
+  <script>
+    const coll = document.querySelector(".collapsible");
+    const content = document.querySelector(".content");
+    coll.addEventListener("click", function () {
+      this.classList.toggle("active");
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>
