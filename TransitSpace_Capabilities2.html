@@ -1,3 +1,4 @@
+<!-- Updated Capabilities Page with Quoting Notes and Adjusted Pricing -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,10 +44,44 @@
     li {
       margin-bottom: 0.5rem;
     }
-    .note {
+    .note, .quote-note {
       color: #aaaaaa;
       font-style: italic;
       margin-top: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      table-layout: fixed;
+      font-size: 0.93rem;
+    }
+    th, td {
+      padding: 0.6rem;
+      border: 1px solid #444;
+      text-align: left;
+      vertical-align: top;
+      word-break: break-word;
+      font-size: 0.88rem;
+    }
+    th {
+      background-color: #1a1a3a;
+      color: #00ffff;
+      font-size: 0.9rem;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #00ffff;
+      color: #0b0c1a;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .cta-button:hover {
+      background-color: #00cccc;
     }
     .collapsible {
       background-color: #2a003f;
@@ -104,18 +139,103 @@
     </ul>
     <p class="note">Note: TransitSpace Systems LLC is platform-agnostic. While our principal consultant has extensive hands-on experience in Microsoft environments, all project architecture discussions begin with a product-agnostic evaluation to determine the most appropriate solution, duration, and platform fit (Azure, AWS, GCP, or otherwise).</p>
 
-    <h2>IT Systems Support</h2>
-    <ul>
-      <li>Network segmentation and firewall best practices (Meraki, Fortinet, etc.)</li>
-      <li>Documentation of escalation paths, SOPs, and user onboarding playbooks</li>
-      <li>Secure deployment models for field and mobile infrastructure teams</li>
-      <li>Augmentation support for internal IT and security teams</li>
-    </ul>
+    <h2>Baseline Quoting Examples</h2>
+    <p class="quote-note">
+      Quotes reflect value-based pricing aligned with expected delivery and consultant effort. Shorter timelines (like Azure) benefit from platform familiarity, while longer timelines (e.g. AWS or Hybrid) reflect research or discovery time within a fixed value—providing clients with deeper support at the same rate. Continuous monthly services (e.g. helpdesk) are priced lower for renewability and budget simplicity.
+    </p>
+
+    <table>
+      <colgroup>
+        <col style="width: 22%;">
+        <col style="width: 24%;">
+        <col style="width: 14%;">
+        <col style="width: 24%;">
+        <col style="width: 16%;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Platform/Context</th>
+          <th>Timeline</th>
+          <th>Service-line</th>
+          <th>Quote</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>IAM Strategy & Deployment</td>
+          <td>Microsoft Azure (Entra ID, Intune)</td>
+          <td>1–2 months</td>
+          <td>Implementation Engagment Service</td>
+          <td>Fixed @ $8,800/total</td>
+        </tr>
+        <tr>
+          <td>IAM Strategy & Deployment</td>
+          <td>AWS / GCP (discovery phase included)</td>
+          <td>3–5 months</td>
+          <td>Implementation Engagment Service</td>
+          <td>Fixed @ $8,800/total</td>
+        </tr>
+        <tr>
+          <td>IAM Strategy & Deployment</td>
+          <td>Hybrid / On-Prem (legacy stack)</td>
+          <td>2–4 months</td>
+          <td>Implementation Engagment Service</td>
+          <td>Fixed @ $15,500/total</td>
+        </tr>
+        <tr>
+          <td>IT Helpdesk Support</td>
+          <td>Tier 1 – Email/Desktop/Basic User Awareness</td>
+          <td>6-12 months</td>
+          <td>Continuous Monthly Service</td>
+          <td>Starting @ $4,500/month</td>
+        </tr>
+        <tr>
+          <td>IT Helpdesk Support</td>
+          <td>Tier 2 + SOP Documentation</td>
+          <td>6-12 months</td>
+          <td>Continuous Monthly Service</td>
+          <td>Starting @ $6,000/month</td>
+        </tr>
+        <tr>
+          <td>IT Helpdesk Support</td>
+          <td>Transit Field / Rugged Infrastructure Re-organize and Document</td>
+          <td>6–12 months</td>
+          <td>Continuous Monthly Service</td>
+          <td>Starting @ $7,000/month</td>
+        </tr>
+        <tr>
+          <td>IT Security Analyst</td>
+          <td>Security Services Analyst + Back-documentation for Gapped Baselines</td>
+          <td>6-12 months</td>
+          <td>Continuous Monthly Service</td>
+          <td>Starting @ $8,500/month</td>
+        </tr>
+        <tr>
+          <td>IT & Cyber Expert</td>
+          <td>Developed Broad Expert to assist in Modernization and Future Cyber Direction</td>
+          <td>6–12 months</td>
+          <td>Continuous Monthly Service</td>
+          <td>Starting @ $13,000/month</td>
+        </tr>
+        <tr>
+          <td>HACS (Highly Adaptive Cybersecurity Services)</td>
+          <td>Proactive and reactive cybersecurity services and supports governmentwide priorities</td>
+          <td>6–12 months</td>
+          <td>Mixed Model (Implementation, Continuous Review, and Support)</td>
+          <td>Fixed @ $188,000/total</td>
+        </tr>
+      </tbody>
+    </table>
 
     <button class="collapsible">Click to Expand: Philosophy on Capabilities</button>
     <div class="content">
       <p>Our capabilities are designed to be adaptable to the mission, not tied to specific platforms or vendors. At our core, we believe that secure infrastructure starts with understanding people, processes, and purpose—before committing to tools or technologies.</p>
       <p>CyberPaul.space exists to ensure that every digital structure has a soul of integrity, and every technical plan has a bridge to the human operators who will sustain it.</p>
+    </div>
+
+    <div style="text-align:center">
+      <a href="mailto:cyberpaul@protonmail.com?subject=Request%20for%20Quote" class="cta-button">📩 Request a Quote</a>
     </div>
   </div>
 
