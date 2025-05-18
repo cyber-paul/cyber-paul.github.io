@@ -1,9 +1,9 @@
 # cyber-paul.github.io
 
-portfolio website
+TransitSpace Systems LLC., website
 
-#FreePalestine
+#FirstPlan
 
-design, refine, rebuild
+ - design, refine, rebuild.. evolve, repeat.
 
 
