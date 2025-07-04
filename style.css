@@ -1,485 +1,119 @@
-/* global */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-.grid-2{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #000000;
-    color: #7A7C80;
-
-}
-
-h2,.white{
-    color: #fff;
-}
-
-h5 {
-  color: #0091ff;
-  font-size: 1.0rem;
-}
-h5 span {
-    font-size: 1.0rem;
-    padding-bottom: 10px;
-    margin:0;
-    color: #305a7b;
-}
-img {
-  border-radius: 65%;
-}
-a{
-    color: #5cb7ab;
-    text-decoration: none;
-}
-/* Nyx-Kronos Black Hole Container */
-#nyx-kronos-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px; /* Adjust to fit your layout */
-    margin-top: 50px;
-}
-
-/* Black Hole Effect */
-#black-hole {
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(30,30,30,0.8) 40%, transparent 70%);
-    border-radius: 50%;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    position: relative;
-    cursor: pointer;
-    animation: pulse 2s infinite alternate ease-in-out;
-    overflow: hidden; /* Ensures Nyx-Kronos image stays inside */
-}
-
-/* Image Wrapper to Keep Centered Inside Black Hole */
-#nyx-image-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-}
-
-/* Nyx-Kronos Image - Stays Inside Black Hole */
-#nyx-image {
-    width: 100%; /* Adjust image size relative to black hole */
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0.6;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    filter: blur(3px) brightness(0.8); /* Warped, shadowy effect */
-}
-
-/* Image Hover Effect - Appears More Clearly */
-#black-hole:hover #nyx-image {
-    transform: translate(-50%, -50%) scale(1.2) rotate(2deg);
-    opacity: 1;
-    filter: blur(1px) brightness(1);
-}
-
-/* Subtle Flickering Animation */
-@keyframes flicker {
-    0% { opacity: 0.6; filter: blur(4px); }
-    50% { opacity: 0.8; filter: blur(2px); }
-    100% { opacity: 0.7; filter: blur(3px); }
-}
-
-#nyx-image {
-    animation: flicker 3s infinite alternate ease-in-out;
-}
-
-/* Site Under Construction Banner */
-#construction-banner {
-    background-color: #ffcc00; /* Bright yellow for visibility */
-    color: #000; /* Black text for contrast */
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 15px 10px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10000; /* Ensures it stays above all elements */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    border-bottom: 3px solid #000; /* Adds a separator for visibility */
-    font-family: Arial, sans-serif;
-}
-
-/* Adds spacing so content doesn't overlap with the fixed banner */
-body {
-    padding-top: 60px; /* Adjust based on banner height */
-}
-
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 6px 10px 0 #305a7b86;
-    transition: 0.3s;
-    width:fit-content;
-    border-radius: 5px; /* 5px rounded corners */
-    margin: auto;
-}
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 #305a7b86;
-  }
-  .card2 {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgb(247, 247, 247);
-    transition: 0.3s;
-    width:30%;
-    margin-left: 35%;
-    border-radius: 5px; /* 5px rounded corners */
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card2:hover {
-    box-shadow: 0 8px 16px 0 rgb(247, 247, 247);
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-  }
-
-/* section 1 */
-.section-1{
-    padding-top: 20vh;
-    text-align: center;
-}
-
-.section-1 p{
-    font-size: 1.1rem;
-    padding-bottom: 10px;
-    margin:0;
-}
-.section-1 p1{
-    font-size: 1.1rem;
-    padding-bottom: 10px;
-    margin:0;
-    color: #0091ff;
-}
-
-.section-1 h2{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-}
-
-.section-1 a{
-    font-size: 1.5rem;
-    padding: 10px;
-}
-/* section 2 */
-.section-2{
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    width: 70%;
-}
-
-.section-2 h2{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-}
-
-.section-2 p{
-    font-size: 1.1rem;
-    padding-bottom: 10px;
-    margin:0;
-}
-.section-2 p1{
-    font-size: 1.1rem;
-    padding-bottom: 10px;
-    margin: 5px;;
-    color: #305a7b;
-}
-
-.section-2 a{
-    display: block;
-    padding: 5px;
-    font-size: 1.2rem;
-    padding-left: 0;
-    width: fit-content;
-}
-/* animations / utilities */
-.section-2 a:hover{
-    font-size: 1.3rem;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.section-1 a:hover{
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.white:hover{
-    position: relative;
-    padding-left: 10px;
-}
-
-#tools-newsfeed {
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 255, 0, 0.6); /* Subtle glow */
-  background-color: #000; /* Dark background */
-  padding: 10px 20px; /* Increase horizontal padding, reduce vertical padding */
-  margin-top: 15px;
-  color: #fff; /* Text color adjustment */
-  width: 100%; /* Allow full-width scaling */
-  max-width: 800px; /* Constrain maximum width for readability */
-  font-size: 1rem; /* Adjust font size for wider text */
-  line-height: 1.4; /* Improve readability with line spacing */
-}
-
-#tools-newsfeed h3 {
-  font-size: 1.4em; /* Adjust title font size */
-  text-align: center;
-  color: #ff0; /* Yellow title */
-  margin-bottom: 10px; /* Slightly more space below the title */
-}
-
-#tools-newsfeed .news-item {
-  padding: 5px 0; /* Reduce vertical padding between news items */
-  border-bottom: 1px solid #444; /* Border for visual separation */
-}
-
-#tools-newsfeed .news-item:last-child {
-  border-bottom: none;
-}
-
-#tools-newsfeed a {
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-  color: #5cb7ab; /* Matches theme */
-  text-decoration: none;
-}
-
-#tools-newsfeed a:hover {
-  color: #ff5722; /* Orange on hover */
-  text-shadow: 0 0 5px rgba(255, 87, 34, 0.8); /* Subtle glow effect */
-  cursor: pointer;
-}
-
-/* For responsiveness */
-@media (max-width: 780px) {
-  #tools-newsfeed {
-    width: 95%; /* Scale to almost full width on smaller screens */
-    padding: 10px;
-  }
-  #tools-newsfeed h3 {
-    font-size: 1.2em;
-  }
-  #tools-newsfeed .news-item {
-    padding: 3px 0; /* Reduce padding even further for compact layout */
-  }
-}
-/* Analysis Section */
-#analysis-section {
-  background-color: #1e1e1e;
-  color: #fff;
-  padding: 15px;
-  margin: 15px auto;
-  border-radius: 8px;
-  max-width: 800px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-#analysis-section h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #ffcc00;
-}
-
-.analysis-tree {
-  list-style-type: none;
-  padding: 0;
+/* Base Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.analysis-tree li {
-  margin-bottom: 20px;
-  padding: 10px 0;
-  border-bottom: 1px solid #444;
+body {
+  font-family: 'Inter', sans-serif;
+  background: #050505;
+  color: #e0e0e0;
+  background-image: radial-gradient(circle at top left, rgba(255, 255, 255, 0.02), transparent 60%),
+                    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.02), transparent 60%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.analysis-tree li:last-child {
-  border-bottom: none;
+header {
+  text-align: center;
+  padding: 3rem 1rem 1.5rem;
+  background-color: rgba(10, 10, 10, 0.8);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
 }
 
-.analysis-tree span {
-  font-size: 1.2rem;
-  margin-right: 10px;
+header img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
 }
 
-.analysis-tree a {
-  font-size: 1.1rem;
-  color: #5cb7ab;
-  text-decoration: none;
-  font-weight: bold;
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #00ffff;
+  margin-top: 1rem;
 }
 
-.analysis-tree a:hover {
-  color: #ff5722;
-  text-decoration: underline;
+.core-quote {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  color: #a37cf0;
+  margin-top: 0.5rem;
 }
 
-.analysis-tree p {
-  margin: 5px 0 0;
-  font-size: 0.9rem;
-  color: #ccc;
+.section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(15, 15, 15, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-  #analysis-section {
-    padding: 15px;
-  }
-
-  .analysis-tree a {
-    font-size: 1rem;
-  }
-
-  .analysis-tree p {
-    font-size: 0.85rem;
-  }
-}
-
-/* media queres */
-@media(max-width:780px){
-    .grid-2{
-        grid-template-columns: 1fr;
-    }
-    .section-1{
-        padding:0;
-        padding-top: 5rem;
-    }
-    .section-2{
-        padding: 0;
-        padding-left: 1.5rem;
-        padding-top: 2rem;
-    }
-    
-}
-/* Fixes unwanted spacing around the layout */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Ensures full-width scaling without gaps */
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-}
-
-/* Adjusts spacing for left section (Profile & Links) */
-.section-1 {
-    padding-top: 10vh; /* Reduced from 20vh */
-    padding-left: 2vw; /* Adjusts left padding */
-    text-align: center;
-}
-
-/* Adjusts spacing for right section (Content) */
-.section-2 {
-    padding-top: 2vh; /* Reduced top padding */
-    padding-left: 2vw;
-    padding-right: 2vw;
-    max-width: 90%; /* Fixes extra right-side spacing */
-    margin: auto;
-}
-
-/* Fixes width for better centering */
-@media (max-width: 780px) {
-    .grid-2 {
-        grid-template-columns: 1fr;
-    }
-    .section-1 {
-        padding-top: 5vh;
-        padding-left: 0;
-    }
-    .section-2 {
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-    /* Consulting Services Section */
-#consulting-services {
-    background-color: #1a1a1a; /* Dark mode theme */
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 8px;
-    margin-top: 30px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-}
-
-#consulting-services h2 {
-    font-size: 1.8rem;
-    color: #ffcc00;
-    margin-bottom: 20px;
+.section h2 {
+  color: #00ffff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .service-category {
-    margin-bottom: 20px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
 }
 
 .service-category h3 {
-    font-size: 1.4rem;
-    color: #5cb7ab;
+  color: #ffaa00;
+  margin-bottom: 0.5rem;
 }
 
 .service-category ul {
-    list-style-type: none;
-    padding: 0;
+  list-style: disc;
+  padding-left: 1.5rem;
 }
 
-.service-category li {
-    font-size: 1.1rem;
-    padding: 5px 0;
-    color: #ddd;
-}
-
-/* Call-to-Action Buttons */
 .cta {
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .cta-button {
-    display: inline-block;
-    background: #ffcc00;
-    color: #000;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: background 0.3s ease;
+  background-color: #00ffff;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
-    background: #ffa500;
-    color: #fff;
+  background-color: #00cccc;
+  color: #fff;
 }
 
+footer {
+  text-align: center;
+  background-color: #111;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header img {
+    width: 100px;
+  }
+
+  .section {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .cta-button {
+    width: 90%;
+    max-width: 300px;
+  }
 }
