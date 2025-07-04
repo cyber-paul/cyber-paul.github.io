@@ -1,6 +1,6 @@
 # cyber-paul.github.io
 
-TransitSpace Systems LLC., website
+CyberPaul.space operating as PowerObscur
 
 #FirstPlan
 
