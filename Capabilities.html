@@ -1,4 +1,3 @@
-<!-- Updated Capabilities Page with Quoting Notes and Adjusted Pricing -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,116 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Capabilities | CyberPaul.space</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at center, #0b0c1a, #000);
-      color: #e0e0e0;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #1a1a2e;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      color: #00ffff;
-      margin: 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: rgba(25, 25, 40, 0.85);
-      border-radius: 12px;
-      box-shadow: 0 0 12px #2a003f88;
-    }
-    h2 {
-      color: #00ffff;
-      font-family: 'Orbitron', sans-serif;
-      border-bottom: 1px solid #333;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .note, .quote-note {
-      color: #aaaaaa;
-      font-style: italic;
-      margin-top: 1rem;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1.5rem;
-      table-layout: fixed;
-      font-size: 0.93rem;
-    }
-    th, td {
-      padding: 0.6rem;
-      border: 1px solid #444;
-      text-align: left;
-      vertical-align: top;
-      word-break: break-word;
-      font-size: 0.88rem;
-    }
-    th {
-      background-color: #1a1a3a;
-      color: #00ffff;
-      font-size: 0.9rem;
-    }
-    .cta-button {
-      display: inline-block;
-      background-color: #00ffff;
-      color: #0b0c1a;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      margin-top: 2rem;
-      text-align: center;
-    }
-    .cta-button:hover {
-      background-color: #00cccc;
-    }
-    .collapsible {
-      background-color: #2a003f;
-      color: #e0e0e0;
-      cursor: pointer;
-      padding: 0.8rem;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1rem;
-      border-radius: 6px;
-      margin-top: 1rem;
-    }
-    .content {
-      padding: 0 1rem;
-      display: none;
-      overflow: hidden;
-      background-color: rgba(30, 30, 50, 0.85);
-      border-left: 4px solid #00ffff;
-      margin-top: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 1.5rem;
-      color: #888;
-      background-color: #111;
-      margin-top: 4rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
+<body>
   <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 0.5rem; font-weight: bold; font-family: 'Orbitron', sans-serif; letter-spacing: 0.5px;">
     🚧 This page contains sample service data and is currently under construction. Final structure and pricing may evolve. 🚧
   </div>
@@ -125,185 +17,26 @@
   <div class="container">
     <h2>Technical Focus Areas</h2>
     <ul>
-      <li>Identity & Access Management (IAM) Strategy and Design</li>
-      <li>Security Operations Center (SOC) Architecture and Response Tuning</li>
-      <li>Threat Modeling and Vulnerability Management</li>
-      <li>Zero Trust Implementation Across Hybrid Environments</li>
-      <li>Public Infrastructure and Transit Cybersecurity Readiness</li>
-      <li>Endpoint Detection, Email Protection, and Cloud Security Hardening</li>
+      <li>APT-aware Threat Hunting & System Integrity Audits</li>
+      <li>Forensic Imaging & LOLBAS Analysis</li>
+      <li>Fractional CISO Strategic Support</li>
+      <li>IAM & Zero Trust Architectures</li>
+      <li>Transit & Infrastructure Hardening</li>
+      <li>Cloud Security (Azure, AWS, GCP)</li>
     </ul>
 
-    <h2>Cloud & Platform Experience</h2>
+    <h2>Engagement Model</h2>
+    <p>PowerObscur operates through <strong>30-day tactical engagements</strong>, designed to deliver maximum insight and value in a bounded timeframe. Pricing begins as follows:</p>
     <ul>
-      <li>Extensive experience with Microsoft Azure cloud ecosystem</li>
-      <li>Hands-on configuration with Entra ID, Microsoft Defender XDR suite, Intune, Sentinel, and Purview</li>
-      <li>Comfortable navigating multi-tenant, hybrid cloud and on-premise deployments</li>
-      <li>Working knowledge of AWS and Google Cloud Platform fundamentals</li>
+      <li><strong>APT Threat Audit:</strong> Starting @ <strong>$2,250</strong></li>
+      <li><strong>Forensic Imaging + Malware Analysis:</strong> Starting @ <strong>$2,500</strong></li>
+      <li><strong>Tactical fCISO Month:</strong> Starting @ <strong>$2,000</strong></li>
+      <li><strong>Remediation Sprint:</strong> Starting @ <strong>$2,750</strong></li>
     </ul>
-    <p class="note">Note: TransitSpace Systems LLC is platform-agnostic. While our principal consultant has extensive hands-on experience in Microsoft environments, all project architecture discussions begin with a product-agnostic evaluation to determine the most appropriate solution, duration, and platform fit (Azure, AWS, GCP, or otherwise).</p>
+    <p class="note">Pricing is influenced by the environment (e.g., number of systems, depth of triage, level of access) and may be quoted accordingly. All services are delivered directly by the operator behind <strong>CyberPaul.space</strong> and follow a trust-first, scope-bounded delivery model.</p>
 
-    <h2>Baseline Quoting Examples</h2>
-    <p>
-      Quotes reflect value-based pricing aligned witdeliveryh expected  and consultant effort. Shorter timelines (like Azure) benefit from platform familiarity, while longer timelines (e.g. AWS or Hybrid) reflect research or discovery time within a fixed value—providing clients with deeper support at the same rate. Continuous monthly services (e.g. helpdesk) are priced lower for renewability and budget simplicity.
-    </p>
-
-    <table>
-      <colgroup>
-        <col style="width: 22%;">
-        <col style="width: 24%;">
-        <col style="width: 14%;">
-        <col style="width: 24%;">
-        <col style="width: 16%;">
-      </colgroup>
-      <thead>
-        <tr>
-          <th>Description</th>
-          <th>Platform/Context</th>
-          <th>Timeline</th>
-          <th>Service-line</th>
-          <th>Quote</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>IAM Strategy & Deployment</td>
-          <td>Microsoft Azure (Entra ID, Intune)</td>
-          <td>1–2 months</td>
-          <td>Implementation Engagement Service</td>
-          <td>Fixed @ $8,800/total</td>
-        </tr>
-        <tr>
-          <td>IAM Strategy & Deployment</td>
-          <td>AWS / GCP (discovery phase included)</td>
-          <td>3–5 months</td>
-          <td>Implementation Engagement Service</td>
-          <td>Fixed @ $8,800/total</td>
-        </tr>
-        <tr>
-          <td>IAM Strategy & Deployment</td>
-          <td>Hybrid / On-Prem (legacy stack)</td>
-          <td>2–4 months</td>
-          <td>Implementation Engagement Service</td>
-          <td>Fixed @ $15,500/total</td>
-        </tr>
-        <tr>
-          <td>IT Helpdesk Support</td>
-          <td>Tier 1 – Email/Desktop/Basic User Awareness</td>
-          <td>6–12 months</td>
-          <td>Continuous Monthly Service</td>
-          <td>Starting @ $4,500/month</td>
-        </tr>
-        <tr>
-          <td>IT Helpdesk Support</td>
-          <td>Tier 2 + SOP Documentation</td>
-          <td>6–12 months</td>
-          <td>Continuous Monthly Service</td>
-          <td>Starting @ $5,500/month</td>
-        </tr>
-        <tr>
-          <td>IT Helpdesk Support</td>
-          <td>Transit Field / Rugged Infrastructure Re-organize and Document</td>
-          <td>6–12 months</td>
-          <td>Continuous Monthly Service</td>
-          <td>Starting @ $7,000/month</td>
-        </tr>
-        <tr>
-          <td>IT Security Analyst</td>
-          <td>Security Services Analyst + Back-documentation for Gapped Baselines</td>
-          <td>6–12 months</td>
-          <td>Continuous Monthly Service</td>
-          <td>Starting @ $8,000/month</td>
-        </tr>
-        <tr>
-          <td>IT & Cyber Expert</td>
-          <td>Developed Broad Expert to assist in Modernization and Future Cyber Direction</td>
-          <td>6–12 months</td>
-          <td>Continuous Monthly Service</td>
-          <td>Starting @ $10,000/month</td>
-        </tr>
-        <tr>
-          <td>HACS (Highly Adaptive Cybersecurity Services)</td>
-          <td>Proactive and reactive cybersecurity services and additional IST support services for government and sectorwide priorities</td>
-          <td>12–24 months</td>
-          <td>Mixed Model (Implementation, Continuous Review, and Support)</td>
-          <td>Fixed @ $198,500/total</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Sample Monthly Service Invoice Estimate</h2>
-    <table>
-      <colgroup>
-        <col style="width: 35%;">
-        <col style="width: 25%;">
-        <col style="width: 10%;">
-        <col style="width: 15%;">
-        <col style="width: 15%;">
-      </colgroup>
-      <thead>
-        <tr>
-          <th>Service Description</th>
-          <th>Context</th>
-          <th>Hours</th>
-          <th>Rate</th>
-          <th>Monthly Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Cybersecurity Risk Assessment: Threat Modeling, Exposure Review, and Executive Summary</td>
-          <td>Transit Infrastructure / Public Sector</td>
-          <td>12</td>
-          <td>$75</td>
-          <td>$900</td>
-        </tr>
-        <tr>
-          <td>IAM Implementation, Engagement Service, and Support</td>
-          <td>Platform Agnostic</td>
-          <td>30</td>
-          <td>$80</td>
-          <td>$2,400</td>
-        </tr>
-        <tr>
-          <td>System Security Engineering (SSE): Secure system design, Zero Trust, DevSecOps integrations</td>
-          <td>Discovery Phase Included</td>
-          <td>30</td>
-          <td>$75</td>
-          <td>$2,250</td>
-        </tr>
-        <tr>
-          <td>RMF Documentation & Compliance Support: SSP, SAR, audit prep, NIST alignment</td>
-          <td>Platform Agnostic</td>
-          <td>30</td>
-          <td>$75</td>
-          <td>$2,250</td>
-        </tr>
-        <tr>
-          <td>Full Service Documentation</td>
-          <td>All Platforms</td>
-          <td>40</td>
-          <td>$65</td>
-          <td>$2,600</td>
-        </tr>
-        <tr>
-          <td>Project Management & Reporting</td>
-          <td>Bi-Weekly or Monthly Syncs</td>
-          <td>2</td>
-          <td>Included</td>
-          <td>$0</td>
-        </tr>
-        <tr>
-          <td style="font-weight: bold; text-align: right;" colspan="4">Estimated Monthly Total:</td>
-          <td style="font-weight: bold;">$9,500 <!-- Includes HACS VA State Scope (SWaM & eVA aligned) --></td>
-        </tr>
-      </tbody>
-    </table>
-   <p class="quote-note">
-  <strong>Note:</strong> This pricing is structured for eligibility under <strong>Virginia HACS Bid Programs</strong> and aligns with <em>Commonwealth of Virginia eVA procurement</em> and <em>SWaM-compliant opportunities</em>.
-  Breakdown reflects both deliverable and labor transparency for public sector engagements.
-</p>
-      </tbody>
-    </table>
+    <h2>Custom Quotes</h2>
+    <p>For complex environments (hybrid cloud, ICS/OT, multi-agency transit systems), we provide customized pricing and scope agreements. Requests may include full system documentation, remediation walkthroughs, or executive-ready deliverables. Quotes are fixed once approved—no hourly surprises.</p>
 
     <button class="collapsible">Click to Expand: Philosophy on Capabilities</button>
     <div class="content">
@@ -312,12 +45,12 @@
     </div>
 
     <div style="text-align:center">
-      <a href="mailto:cyberpaul@protonmail.com?subject=Request%20for%20Quote" class="cta-button">📩 Request a Quote</a>
+      <a href="mailto:cyberpaul@protonmail.com?subject=Request%20for%20Quote" class="cta-button">📩 Request a Custom Quote</a>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 TransitSpace Systems LLC | DBA CyberPaul.space
+    &copy; 2025 PowerObscur. Operated by <strong>CyberPaul.space</strong>
   </footer>
 
   <script>
@@ -334,4 +67,3 @@
   </script>
 </body>
 </html>
-
