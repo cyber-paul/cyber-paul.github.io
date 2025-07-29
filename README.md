@@ -1,6 +1,6 @@
 # cyber-paul.github.io
 
-CyberPaul.space operating as PowerObscur
+CyberPaul.space operating as PowerSecur
 
 #FirstPlan
 
